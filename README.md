@@ -49,18 +49,18 @@ This project implements a real-time system to detect vehicles in highway video f
 ## Installation
 
 1. Clone the repository
-   ```bash
-   git clone https://github.com/MattPereira02/Computer-Vision.git
-   cd Computer Vision
-   ```
+```bash
+git clone https://github.com/MattPereira02/Computer-Vision.git
+cd Computer Vision
+```
 2. Install requirements found in requirements.txt
 
 ## Usage
 
 1. Place video in the videos folder
 2. Run projet
-   ```bash
-   python main.py
-   ```
+```bash
+python main.py
+```
 ## Sample output frame
 ![image](https://github.com/user-attachments/assets/f3399121-8c2f-4926-818b-9816ff900b73)
