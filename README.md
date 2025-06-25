@@ -21,7 +21,7 @@ This project implements a real-time system to detect vehicles in highway video f
 - OpenCV
 - YOLOv5 (Ultralytics)
 - NumPy
-- SORT / DeepSORT / ByteTrack
+- SORT
 - Kalman Filter, Hungarian Algorithm
 
 ---
