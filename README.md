@@ -39,6 +39,7 @@ This project implements a real-time system to detect vehicles in highway video f
 ├── __init__.py              # init file
 ├── videos                   # Folder where input video is placed
 ├── output                   # Folder where output video is generated
+├── yolov5s.pt               # Yolov5
 ├──README.md                 # This file
 ├── sort                     # Folder with sort related files
       ├── __init__.py
