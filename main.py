@@ -16,6 +16,11 @@ cap = cv2.VideoCapture("videos/highway.mp4")
 # Speed limit (e.g., 80 km/h)
 SPEED_LIMIT = config.SPEED_LIMIT_KMH
 
+fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+fps = 30.0
+frame_size = (int(cap.get(3)), int(cap.get(4)))
+out = cv2.VideoWriter('output/output.mp4', fourcc, fps, frame_size)
+
 while True:
     ret, frame = cap.read()
     if not ret:
@@ -41,9 +46,13 @@ while True:
         cv2.rectangle(frame, (x1, y1), (x2, y2), color, 2)
         cv2.putText(frame, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
+    # Write the frame to the output video
+    out.write(frame)
+
     cv2.imshow("Speed Tracking", frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
+out.release()
 cap.release()
 cv2.destroyAllWindows()
